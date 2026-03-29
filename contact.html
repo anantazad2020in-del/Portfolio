@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – Anant Azad</title>
+  <meta name="description" content="Get in touch with Anant Azad for internship opportunities or collaborations." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">AA</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+    </div>
+    <div class="container">
+      <p class="section-label">Let's Talk</p>
+      <h1 class="page-title">Get In <span class="gradient-text">Touch</span></h1>
+      <p class="page-subtitle">I'm open to internship opportunities, collaborations, or just a friendly chat about tech!</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section reveal">
+    <div class="container contact-grid">
+
+      <!-- Info Panel -->
+      <div class="contact-info reveal-child">
+        <h2>Let's Connect</h2>
+        <p>Feel free to reach out through any of the channels below. I typically respond within 24 hours.</p>
+
+        <div class="contact-items">
+          <a href="mailto:anantazad2020in@gmail.com" class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <span class="contact-label">Email</span>
+              <span class="contact-value">anantazad2020in@gmail.com</span>
+            </div>
+          </a>
+          <a href="tel:+917318459584" class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <span class="contact-label">Phone</span>
+              <span class="contact-value">+91 7318459584</span>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/anant-azad-6b0743295" target="_blank" class="contact-item">
+            <div class="contact-item-icon"><i class="fab fa-linkedin-in"></i></div>
+            <div>
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-value">anantazad-6b0743295</span>
+            </div>
+          </a>
+          <a href="https://github.com/anantazad2020in-del" target="_blank" class="contact-item">
+            <div class="contact-item-icon"><i class="fab fa-github"></i></div>
+            <div>
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value">anantazad2020in-del</span>
+            </div>
+          </a>
+          <div class="contact-item no-link">
+            <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <span class="contact-label">Location</span>
+              <span class="contact-value">Greater Noida, India</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="availability-badge">
+          <span class="badge-dot pulse"></span>
+          Available for Internships &amp; Freelance
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form-wrap reveal-child">
+        <form class="contact-form" id="contactForm" novalidate>
+          <h2>Send a Message</h2>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nameInput">Your Name</label>
+              <div class="input-wrap">
+                <i class="fas fa-user"></i>
+                <input type="text" id="nameInput" name="name" placeholder="John Doe" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="emailInput">Your Email</label>
+              <div class="input-wrap">
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="emailInput" name="email" placeholder="john@example.com" required />
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subjectInput">Subject</label>
+            <div class="input-wrap">
+              <i class="fas fa-tag"></i>
+              <input type="text" id="subjectInput" name="subject" placeholder="Internship Opportunity" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="messageInput">Message</label>
+            <div class="input-wrap textarea-wrap">
+              <i class="fas fa-comment-alt"></i>
+              <textarea id="messageInput" name="message" rows="5" placeholder="Hi Anant, I'd love to connect about..." required></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <div class="form-success" id="formSuccess">
+            <i class="fas fa-check-circle"></i>
+            <span>Thanks for reaching out! I'll get back to you soon.</span>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-logo">Anant Azad</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-socials">
+        <a href="https://github.com/anantazad2020in-del" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/anantazad-6b0743295" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:anantazad2020in@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+      <p class="footer-copy">&copy; 2024 Anant Azad. Crafted with passion.</p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

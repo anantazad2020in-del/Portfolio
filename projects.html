@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects – Anant Azad</title>
+  <meta name="description" content="Projects built by Anant Azad – web apps, algorithms, and more." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">AA</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+    </div>
+    <div class="container">
+      <p class="section-label">What I've Built</p>
+      <h1 class="page-title">My <span class="gradient-text">Projects</span></h1>
+      <p class="page-subtitle">A collection of projects I've built to sharpen my skills and solve real problems.</p>
+    </div>
+  </section>
+
+  <!-- Projects Grid -->
+  <section class="projects-page-section reveal">
+    <div class="container">
+      <!-- Filter Tabs -->
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="java">Java</button>
+        <button class="filter-btn" data-filter="algorithm">Algorithm</button>
+      </div>
+
+      <div class="projects-full-grid">
+
+        <!-- N-Queen Visualizer -->
+        <div class="project-full-card reveal-child" data-category="web algorithm">
+          <div class="project-glow"></div>
+          <div class="pfc-top">
+            <div class="pfc-icon-wrap">
+              <div class="pfc-icon"><i class="fas fa-chess-queen"></i></div>
+            </div>
+            <div class="pfc-badges">
+              <span class="badge-tag">Algorithm</span>
+              <span class="badge-tag">Web</span>
+            </div>
+          </div>
+          <div class="pfc-body">
+            <h2>N-Queen Visualizer</h2>
+            <p>
+              An interactive visualizer demonstrating the N-Queens puzzle solution using the backtracking algorithm on an N×N chessboard. Features step-by-step queen placement with visual feedback, showing backtracking in real time when conflicts arise.
+            </p>
+            <ul class="pfc-highlights">
+              <li><i class="fas fa-check-circle"></i> Backtracking algorithm visualization</li>
+              <li><i class="fas fa-check-circle"></i> Step-by-step N×N chessboard animation</li>
+              <li><i class="fas fa-check-circle"></i> Real-time conflict detection feedback</li>
+            </ul>
+          </div>
+          <div class="pfc-footer">
+            <div class="project-tags">
+              <span>JavaScript</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Backtracking</span>
+            </div>
+            <div class="pfc-links">
+              <a href="https://github.com/anantazad2020in-del/N-Queen" target="_blank" class="btn btn-sm btn-outline">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- BulkBuy -->
+        <div class="project-full-card reveal-child" data-category="web">
+          <div class="project-glow"></div>
+          <div class="pfc-top">
+            <div class="pfc-icon-wrap">
+              <div class="pfc-icon"><i class="fas fa-shopping-cart"></i></div>
+            </div>
+            <div class="pfc-badges">
+              <span class="badge-tag">Web App</span>
+            </div>
+          </div>
+          <div class="pfc-body">
+            <h2>BulkBuy – Group Purchase App</h2>
+            <p>
+              A group buying web application that enables users to pool purchases together for bulk discounts. Contributed to a responsive and user-friendly frontend UI.
+            </p>
+            <ul class="pfc-highlights">
+              <li><i class="fas fa-check-circle"></i> Group purchase pooling system</li>
+              <li><i class="fas fa-check-circle"></i> Responsive HTML & CSS frontend</li>
+              <li><i class="fas fa-check-circle"></i> User-friendly interface design</li>
+            </ul>
+          </div>
+          <div class="pfc-footer">
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="pfc-links">
+              <a href="https://bulkbuy-group-purchase-app.onrender.com/" target="_blank" class="btn btn-sm btn-primary">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rock Paper Scissors -->
+        <div class="project-full-card reveal-child" data-category="web">
+          <div class="project-glow"></div>
+          <div class="pfc-top">
+            <div class="pfc-icon-wrap">
+              <div class="pfc-icon"><i class="fas fa-gamepad"></i></div>
+            </div>
+            <div class="pfc-badges">
+              <span class="badge-tag">Game</span>
+              <span class="badge-tag">Web</span>
+            </div>
+          </div>
+          <div class="pfc-body">
+            <h2>Rock Paper Scissors Game</h2>
+            <p>
+              A web-based Rock Paper Scissors game allowing users to play against the computer with real-time result feedback and a smooth, engaging user experience.
+            </p>
+            <ul class="pfc-highlights">
+              <li><i class="fas fa-check-circle"></i> Play vs. computer with real-time results</li>
+              <li><i class="fas fa-check-circle"></i> Smooth UI interactions and animations</li>
+              <li><i class="fas fa-check-circle"></i> Clean game logic implementation</li>
+            </ul>
+          </div>
+          <div class="pfc-footer">
+            <div class="project-tags">
+              <span>JavaScript</span>
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
+            <div class="pfc-links">
+              <a href="https://rock-paper-scissor-codecircuit.onrender.com/" target="_blank" class="btn btn-sm btn-primary">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Student Grade Tracker -->
+        <div class="project-full-card reveal-child" data-category="java">
+          <div class="project-glow"></div>
+          <div class="pfc-top">
+            <div class="pfc-icon-wrap">
+              <div class="pfc-icon"><i class="fas fa-chart-bar"></i></div>
+            </div>
+            <div class="pfc-badges">
+              <span class="badge-tag">Java</span>
+              <span class="badge-tag">Console App</span>
+            </div>
+          </div>
+          <div class="pfc-body">
+            <h2>Student Grades Tracker</h2>
+            <p>
+              A Java console application enabling users to add, view, and analyze student grades using an ArrayList-based data structure. Features a menu-driven interface for full CRUD functionality.
+            </p>
+            <ul class="pfc-highlights">
+              <li><i class="fas fa-check-circle"></i> ArrayList-based data management</li>
+              <li><i class="fas fa-check-circle"></i> Average, highest & lowest grade calculations</li>
+              <li><i class="fas fa-check-circle"></i> Menu-driven console interface</li>
+            </ul>
+          </div>
+          <div class="pfc-footer">
+            <div class="project-tags">
+              <span>Java</span>
+              <span>OOP</span>
+              <span>ArrayList</span>
+            </div>
+            <div class="pfc-links">
+              <a href="https://github.com/anantazad2020in-del" target="_blank" class="btn btn-sm btn-outline">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-logo">Anant Azad</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-socials">
+        <a href="https://github.com/anantazad2020in-del" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/anant-azad-6b0743295/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:anantazad2020in@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+      <p class="footer-copy">&copy; 2024 Anant Azad. Crafted with passion.</p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
